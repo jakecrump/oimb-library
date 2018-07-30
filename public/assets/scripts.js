@@ -17,16 +17,19 @@ const updateInfo = (i)=>{
 
 const init = ()=>{
 
+	let inx = 1;
 	if(location.search.split('image=')[1]){
 		const userEntered = location.search.split('image=')[1];
 		updateInfo(userEntered);
+
+		inx = userEntered;
 	}
 
 	else{
 		updateInfo(1)
 	}
 
-	let inx = 1;
+	
 
 	$('.next-btn').on('click', ()=>{
 	 	inx++;
