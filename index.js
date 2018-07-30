@@ -66,4 +66,5 @@ app.get('/', (req, res)=> {
 
  
 app.listen(3000)
+console.log('opened on localhost:3000')
 
