@@ -14,7 +14,7 @@ const updateInfo = (beg, end)=>{
 			if (i <= end && i > beg){
 
 				$('.image-wrapper').append(`
-					<a href="/?image=${parseInt(i)+1}"><div class="oimb-image">
+					<a target="_blank" href="/?image=${parseInt(i)+1}"><div class="oimb-image">
 					    <img src="${bod[i].img}">
 					</div>`)
 			}
