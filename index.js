@@ -56,12 +56,13 @@ app.use('/assets', express.static('public/assets'))
  
 app.get('/', (req, res)=> {
 
-  fs.readFile('./public/index.html', (err, bod)=>{
-  	console.log(bod)
-  })
-
-
   res.sendFile('./public/index.html', {root: __dirname})
+})
+
+app.get('/thumbnails', (req, res)=>{
+	
+	res.sendFile('./public/thumbnails.html', {root:__dirname})	
+
 })
 
  

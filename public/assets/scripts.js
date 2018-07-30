@@ -12,7 +12,9 @@ const updateInfo = (i)=>{
 	 	$('.info-wrapper p').text(bod[i-1].caption)
 	})
 
-	window.history.pushState('page', 'Title', `/?image=${i}`);
+	if (location.search.split('image=')[1] != i){
+		window.history.pushState('page', 'Title', `/?image=${i}`);
+	}
 }
 
 const init = ()=>{
