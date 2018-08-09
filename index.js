@@ -50,7 +50,7 @@ const data = require('./public/assets/results.json');
 const app = express();
 
 
-app.use('/assets', express.static('public/assets'))
+app.use('/assets/', express.static('./public/assets/'))
  
 app.get('/', (req, res)=> {
 
