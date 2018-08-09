@@ -42,8 +42,6 @@
 // 2
 
 
-
-
 const express = require('express')
 const cheerio = require('cheerio')
 const fs = require('fs')
